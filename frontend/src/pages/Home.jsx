@@ -34,11 +34,17 @@ function Home() {
     return matchesSearch && matchesCategory;
   });
 
+  // const handleLogout = () => {
+  //   localStorage.removeItem("user");
+  //   window.location.href = "/login";
+  // };
+  // const navigate = useNavigate();
+    const navigate = useNavigate();
+
   const handleLogout = () => {
     localStorage.removeItem("user");
-    window.location.href = "/login";
+    navigate("/login");
   };
-  const navigate = useNavigate();
 
   return (
     <div>
