@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Analyzer",
+    "description": "Analyze resumes and give feedback",
+    "category": "Productivity",
+    "tags": [
+      "AI",
+      "Career"
+    ],
+    "apiUrl": "",
+    "sampleInput": "John Doe\nSkills: React, Node\nExperience: 2 years\nAnalyze my resume",
+    "creator": "System",
+    "rating": 4.75,
+    "usage": 1207
+  },
+  {
+    "id": 2,
+    "name": "Code Reviewer",
+    "description": "Review code and suggest improvements",
+    "category": "Development",
+    "tags": [
+      "Coding",
+      "AI"
+    ],
+    "apiUrl": "",
+    "sampleInput": "function sum(a,b){return a+b}\nReview this code",
+    "creator": "System",
+    "rating": 4.73125,
+    "usage": 983
+  },
+  {
+    "id": 3,
+    "name": "Blog Writer",
+    "description": "Generate blog posts on any topic",
+    "category": "Creative",
+    "tags": [
+      "Writing",
+      "AI"
+    ],
+    "apiUrl": "",
+    "sampleInput": "Write a blog about AI in education",
+    "creator": "System",
+    "rating": 4.6,
+    "usage": 861
+  },
+  {
+    "id": 4,
+    "name": "Research Summarizer",
+    "description": "Summarize long articles and research papers",
+    "category": "Research",
+    "tags": [
+      "AI",
+      "Study"
+    ],
+    "apiUrl": "",
+    "sampleInput": "Summarize this:\nArtificial Intelligence is transforming industries...",
+    "creator": "System",
+    "rating": 3.4,
+    "usage": 1100
+  },
+  {
+    "id": 5,
+    "name": "Email Generator",
+    "description": "Generate professional emails instantly",
+    "category": "Productivity",
+    "tags": [
+      "Writing",
+      "Career"
+    ],
+    "apiUrl": "",
+    "sampleInput": "Write a formal email for job application",
+    "creator": "System",
+    "rating": 4.65,
+    "usage": 740
+  },
+  {
+    "id": 6,
+    "name": "Grammar Fixer",
+    "description": "Correct grammar and improve sentence quality",
+    "category": "Creative",
+    "tags": [
+      "Writing",
+      "AI"
+    ],
+    "apiUrl": "",
+    "sampleInput": "i has a dream to become engineer fix this sentence",
+    "creator": "System",
+    "rating": 4.55,
+    "usage": 670
+  },
+  {
+    "id": 7,
+    "name": "Interview Coach",
+    "description": "Prepare for interviews with mock questions",
+    "category": "Productivity",
+    "tags": [
+      "Career",
+      "AI"
+    ],
+    "apiUrl": "",
+    "sampleInput": "Ask me interview questions for software developer role",
+    "creator": "System",
+    "rating": 4.85,
+    "usage": 1301
+  },
+  {
+    "id": 8,
+    "name": "Story Generator",
+    "description": "Create creative stories based on prompts",
+    "category": "Creative",
+    "tags": [
+      "Writing",
+      "Fun"
+    ],
+    "apiUrl": "",
+    "sampleInput": "Write a fantasy story about a lost kingdom",
+    "creator": "System",
+    "rating": 4.5,
+    "usage": 543
+  },
+  {
+    "id": 1774011561363,
+    "name": "new agent",
+    "description": "this is new agent",
+    "category": "Creative",
+    "tags": [
+      "#creative"
+    ],
+    "apiUrl": "",
+    "sampleInput": "tell me a disney story",
+    "rating": 4,
+    "usage": 0
+  }
+]
