@@ -15,7 +15,7 @@ function Home() {
   // fetch agents
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/agents")
+      .get("https://agenthub-pwxn.onrender.com/api/agents")
       .then((res) => setAgents(res.data))
       .catch((err) => console.error(err));
   }, []);

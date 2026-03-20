@@ -24,7 +24,7 @@ function Register() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users/register", {
+      const response = await axios.post("https://agenthub-pwxn.onrender.com/api/users/register", {
         name: form.name,
         email: form.email,
         password: form.password

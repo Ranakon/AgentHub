@@ -14,7 +14,7 @@ function Dashboard() {
     const userId = user._id || user.id;
 
     axios
-      .get(`http://localhost:5000/api/agents/user/${userId}`)
+      .get(`https://agenthub-pwxn.onrender.com/api/agents/user/${userId}`)
       .then((res) => setAgents(res.data))
       .catch((err) => {
         console.error(err);

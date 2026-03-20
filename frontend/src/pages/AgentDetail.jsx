@@ -15,7 +15,7 @@ function AgentDetail() {
   const submitRating = async (rating) => {
   setUserRating(rating);
 
-  await axios.post("http://localhost:5000/api/agents/rate", {
+  await axios.post("https://agenthub-pwxn.onrender.com/api/agents/rate", {
     agentId: id,
     rating
   });
@@ -23,12 +23,12 @@ function AgentDetail() {
 
   useEffect(() => {
     // Load all agents for sidebar
-    axios.get("http://localhost:5000/api/agents")
+    axios.get("https://agenthub-pwxn.onrender.com/api/agents")
       .then(res => setAgents(res.data))
       .catch(err => console.error(err));
 
     // Load selected agent from backend by ID
-    axios.get(`http://localhost:5000/api/agents/${id}`)
+    axios.get(`https://agenthub-pwxn.onrender.com/api/agents/${id}`)
       .then(res => {
         setAgent(res.data);
         setInput(res.data?.sampleInput || "");
@@ -52,7 +52,7 @@ function AgentDetail() {
   }
 
   try {
-    const res = await axios.post("http://localhost:5000/api/agents/run", {
+    const res = await axios.post("https://agenthub-pwxn.onrender.com/api/agents/run", {
       agentId,
       input
     });

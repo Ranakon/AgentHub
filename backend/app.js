@@ -7,7 +7,9 @@ import agentRoutes from "./routes/agent.routes.js";
 const app = express();
 
 // middleware
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 app.use(express.json());
 
 // routes

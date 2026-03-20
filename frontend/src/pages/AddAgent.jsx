@@ -37,7 +37,7 @@ useEffect(() => {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/agents", data);
+      await axios.post("https://agenthub-pwxn.onrender.com/api/agents", data);
       alert("Agent added successfully!");
       navigate("/"); // Navigate back to home or dashboard
     } catch (error) {
