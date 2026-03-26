@@ -1,5 +1,5 @@
 <div align="center">
-<img width="345" height="781" alt="GHBanner" src="https://raw.githubusercontent.com/Ranakon/Ranakon/refs/heads/main/Agentai.png" />
+<img width="1200" height="475" alt="GHBanner" src="https://raw.githubusercontent.com/Ranakon/Ranakon/refs/heads/main/Agentai.png" />
 </div>
 
 # 🚀 Agent AI — Collaborative Multi-Agent Platform
