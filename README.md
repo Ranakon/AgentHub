@@ -151,7 +151,7 @@ Aspiring Software Developer | MERN Stack Enthusiast
 
 ---
 
-## 💖 Final Note
+##  Final Note
 
 This project isn’t just about code…
 it’s about building something that thinks, collaborates, and evolves.
