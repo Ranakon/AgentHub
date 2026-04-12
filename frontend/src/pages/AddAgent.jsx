@@ -12,7 +12,7 @@ useEffect(() => {
   if (!user) {
     navigate("/login");
   }
-}, []);
+}, [navigate]);
   const [form, setForm] = useState({
     name: "",
     description: "",

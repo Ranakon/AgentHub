@@ -8,7 +8,6 @@ function Home() {
   const [agents, setAgents] = useState([]);
   const [search, setSearch] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
-  const [selectedTag, setSelectedTag] = useState("");
   const user = JSON.parse(localStorage.getItem("user")) || { name: "Guest" };
   const [selected, setSelected] = useState("All");
 

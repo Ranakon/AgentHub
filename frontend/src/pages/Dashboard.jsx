@@ -7,7 +7,6 @@ function Dashboard() {
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user?._id && !user?.id) {
-      setAgents([]);
       return;
     }
 

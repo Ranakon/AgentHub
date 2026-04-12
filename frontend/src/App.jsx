@@ -8,15 +8,17 @@ import AddAgent from "./pages/AddAgent";
 import AgentDetail from "./pages/AgentDetail";
 import Dashboard from "./pages/Dashboard"; // check path!
 
+const MotionDiv = motion.div;
+
 const Page = ({ children }) => (
-  <motion.div
+  <MotionDiv
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
     transition={{ duration: 0.03 }}
   >
     {children}
-  </motion.div>
+  </MotionDiv>
 );
 
 function AnimatedRoutes() {
