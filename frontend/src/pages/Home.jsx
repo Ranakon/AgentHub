@@ -89,7 +89,7 @@ function Home() {
     <div>
       <nav className="navbar">
         <div className="navbar-brand">
-          <span id="TitleHub">AgentHub</span>
+          <span id="TitleHub"><span className="neon-icon">◉</span> AgentHub</span>
         </div>
 
         <div className="navbar-search">
