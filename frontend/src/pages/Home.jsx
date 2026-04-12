@@ -25,14 +25,28 @@ function Home() {
     const loadData = async () => {
       setIsLoading(true);
       try {
-        const agentsReq = axios.get(`${API_BASE}/agents`);
-        const favoritesReq = userId
-          ? axios.get(`${API_BASE}/users/${userId}/favorites`)
-          : Promise.resolve({ data: { favorites: [] } });
+        const requests = [
+          axios.get(`${API_BASE}/agents`),
+          userId
+            ? axios.get(`${API_BASE}/users/${userId}/favorites`)
+            : Promise.resolve({ data: { favorites: [] } }),
+        ];
 
-        const [agentsRes, favoritesRes] = await Promise.all([agentsReq, favoritesReq]);
-        setAgents(agentsRes.data || []);
-        setFavoriteIds((favoritesRes.data?.favorites || []).map((id) => String(id)));
+        const [agentsResult, favoritesResult] = await Promise.allSettled(requests);
+
+        if (agentsResult.status === "fulfilled") {
+          setAgents(agentsResult.value.data || []);
+        } else {
+          console.error("Failed to load agents", agentsResult.reason);
+          setAgents([]);
+        }
+
+        if (favoritesResult.status === "fulfilled") {
+          setFavoriteIds((favoritesResult.value.data?.favorites || []).map((id) => String(id)));
+        } else {
+          console.warn("Favorites unavailable for this user", favoritesResult.reason);
+          setFavoriteIds([]);
+        }
       } catch (err) {
         console.error(err);
       } finally {

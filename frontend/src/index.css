@@ -675,3 +675,48 @@ button:hover {
     margin: 0 0.8rem;
   }
 }
+
+/* Premium motion/depth overrides */
+body::before {
+  animation-duration: 7s;
+  filter: blur(16px);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: -25%;
+  background:
+    radial-gradient(circle at 30% 70%, rgba(6, 182, 212, 0.16), transparent 32%),
+    radial-gradient(circle at 75% 45%, rgba(168, 85, 247, 0.14), transparent 35%);
+  animation: bg-float-fast 4.2s linear infinite alternate;
+  z-index: -1;
+  filter: blur(20px);
+}
+
+@keyframes bg-float-fast {
+  0% { transform: translate3d(0, 0, 0) scale(1.02); }
+  100% { transform: translate3d(2.5%, -2%, 0) scale(1.1); }
+}
+
+.navbar,
+.card,
+.card-panel,
+.auth-card,
+.dropdown-menu,
+.stat-card {
+  backdrop-filter: blur(22px) saturate(135%);
+  box-shadow:
+    0 20px 60px rgba(2, 6, 23, 0.55),
+    0 1px 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1px 0 rgba(15, 23, 42, 0.7) inset,
+    0 0 24px rgba(34, 211, 238, 0.08);
+}
+
+.card {
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+}
